@@ -1,0 +1,428 @@
+/* --- GLOBAL STYLES --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  color: #111;
+  background: #e9dfd9;
+  line-height: 1.6;
+}
+
+/* --- HEADER --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  font-size: 18px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+  animation: fadeInUp 1s ease forwards;
+  
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.book-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: rgb(34, 34, 34);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.book-btn:hover {
+  background-color: rgb(88, 82, 71);
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 4px;
+  animation: fadeIn 1s ease 0.3s forwards;
+}
+
+/* --- VALUES SECTION --- */
+.values-section {
+  padding: 80px 60px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.values-section h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #6d5f56;
+}
+
+.values-section hr {
+  width: 40px;
+  margin: 0 auto 40px;
+  border: 1px solid #ccc;
+}
+
+.values-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.value-box {
+  flex: 1;
+  min-width: 260px;
+  max-width: 360px;
+  text-align: left;
+  padding: 0 10px;
+  border-right: 1px solid #eee;
+}
+
+.value-box:last-child {
+  border-right: none;
+}
+
+.value-box h3 {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.value-box p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* --- SOCIAL SECTION --- */
+.social-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.social-section h2 {
+  font-size: 2.5rem;
+  color: #a89992;
+}
+
+.divider {
+  width: 60px;
+  height: 2px;
+  background-color: #d4cfc9;
+  margin: 1rem auto 2rem auto;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+ 
+}
+/* --- CTA SECTION --- */
+.cta-section {
+  background: url('Garden.webp') no-repeat center center/cover;
+  padding: 6rem 2rem;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #f2e8e4;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background: #e0d6d2;
+}
+
+/* --- PRESS SECTION --- */
+.press-section {
+  padding: 60px 20px;
+  background-color: #fdfdfd;
+  text-align: center;
+  color: #333;
+}
+
+.press-title {
+  font-size: 2rem;
+  color: #8a7c72;
+  margin-bottom: 20px;
+  position: relative;
+}
+.press-section hr {
+  width: 40px;
+  margin: 0 auto 40px;
+  border: 1px solid #ccc;
+}
+.press-quotes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quote {
+  max-width: 300px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.source {
+  display: block;
+  margin-top: 10px;
+  color: #888;
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* --- SUBSCRIBE SECTION --- */
+.subscribe-section {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.subscribe-section h2 {
+  font-size: 2.25rem;
+  margin-bottom: 10px;
+}
+
+.subscribe-section p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 15px;
+  font-size: 16px;
+  flex: 1;
+  min-width: 250px;
+  border: 1px solid #ccc;
+}
+
+.subscribe-form button {
+  background-color: #e5dcd6;
+  color: #000;
+  padding: 15px 25px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* --- FOOTER --- */
+.site-footer {
+  background-color: #e9dfd9;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 10px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.footer-content,
+.powered {
+  text-align: center;
+}
+
+.social-icons a {
+  margin: 0 8px;
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.powered a {
+  color: #000;
+  font-weight: bold;
+}
+
+/* --- ANIMATIONS --- */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 30px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .values-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .value-box {
+    max-width: 100%;
+    border-right: none;
+    text-align: center;
+  }
+
+  .cta-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .press-quotes {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .quote {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .cta-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .subscribe-form input[type="email"],
+  .subscribe-form button {
+    width: 100%;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
